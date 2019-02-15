@@ -6,6 +6,8 @@ export const reading: string = 'Reading';
 export const speaking: string = 'Speaking';
 export const listening: string = 'Listening';
 export const recognition: string = 'Recognition';
+export const math: string = 'Math';
+
 export const text: string = 'Text';
 export const audio: string = 'Audio';
 export const image: string = 'Image';
