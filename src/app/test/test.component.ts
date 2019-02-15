@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 
 import TestDataService from './test-data.service';
 import {image} from '../app.constatnt';
+import AppStatic from '../app.static';
 
 /**
  * @title Stepper overview
@@ -58,5 +59,7 @@ export class TestComponent implements OnInit {
       });
       problemType = '';
     });
+
+    AppStatic.resultSubkect.next(this.result);
   }
 }
