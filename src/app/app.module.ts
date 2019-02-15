@@ -1,16 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatCardModule} from '@angular/material/card';
 
 import { AppComponent } from './app.component';
+import {TestComponent} from './test/test.component';
+import TestDataService from './test/test-data.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TestComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MatGridListModule,
+    MatCardModule
   ],
-  providers: [],
+  providers: [TestDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
