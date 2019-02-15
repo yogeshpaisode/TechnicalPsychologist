@@ -7,13 +7,13 @@
   <section *ngFor="let result of results" style="margin-bottom: 20px;">
     <mat-card>{{result.type}}</mat-card>
 
-    <mat-grid-list cols="2" rowHeight="2:1">
+    <mat-grid-list cols="2" rowHeight="2:1" class="chart">
 
       <mat-grid-tile *ngFor="let category of result.categories">
         <mat-card>
           <app-charts
-          [score]=""
-          [title]="">
+          [r_score]="category.score"
+          [r_title]="category.type">
           </app-charts>
         </mat-card>
       </mat-grid-tile>
