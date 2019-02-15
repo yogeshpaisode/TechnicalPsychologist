@@ -23,15 +23,7 @@ export default class TestDataService {
         {
           type: writing,
           score: 0
-        },
-        {
-          type: writing,
-          score: 0
-        },
-        {
-          type: writing,
-          score: 0
-        },
+        }
       ]
     },
     {
