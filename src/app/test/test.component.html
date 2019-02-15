@@ -3,7 +3,7 @@
     <div mat-card-avatar>
     </div>
     <mat-card-title>Sonu Mishra</mat-card-title>
-    <mat-card-subtitle>Dislexsia > KG > Reading Test</mat-card-subtitle>
+    <mat-card-subtitle>{{class}} > {{testType}}</mat-card-subtitle>
   </mat-card-header>
 </mat-card>
 
@@ -12,8 +12,8 @@
   <mat-grid-tile>
     <mat-card class="card">
 
-      <section class="option-group">
-        <mat-radio-group>
+      <section class="option-group" *ngIf="currentQuestion">
+        <mat-radio-group [(ngModel)]="currentQuestion.weightage">
           <mat-radio-button class="options" [value]="25">
             Bad
           </mat-radio-button>
@@ -34,7 +34,7 @@
 
   <mat-grid-tile>
     <mat-card class="card">
-      Simple card
+      {{currentQuestion.source}}
     </mat-card>
   </mat-grid-tile>
 
@@ -42,7 +42,20 @@
 
 <section class="container-margin-left">
   <mat-card-actions>
+
     <button mat-flat-button color="accent">Previous</button>
-    <button mat-flat-button color="primary" style="margin-left: 4px;">Next</button>
+    <button mat-flat-button
+            color="primary"
+            class="option-button"
+            *ngIf="isNextActive"
+            [disabled]="!currentQuestion.weightage"
+            (click)="onNext();">Next
+    </button>
+
+    <button mat-flat-button
+            color="accent"
+            *ngIf="!isNextActive"
+            class="option-button">Done</button>
+
   </mat-card-actions>
 </section>

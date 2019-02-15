@@ -15,3 +15,7 @@
 .option-group {
   margin-top: 33px !important;
 }
+
+.option-button {
+  margin-left: 4px;
+}

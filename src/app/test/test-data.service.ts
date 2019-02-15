@@ -11,28 +11,46 @@ export default class TestDataService {
           'disabilityType': dsylexia,
           'questionType': text,
           'isLocal': true,
-          'source': 'What is the word before "H"',
+          'source': '1',
           'answer': '',
           'weightage': 0,
           'learningType': readingWrinting
         },
         {
           'disabilityType': dsylexia,
-          'questionType': audio,
-          'isLocal': false,
-          'source': 'pathOfAudio',
+          'questionType': text,
+          'isLocal': true,
+          'source': '2',
           'answer': '',
           'weightage': 0,
-          'learningType': listening
+          'learningType': readingWrinting
         },
         {
           'disabilityType': dsylexia,
-          'questionType': image,
-          'isLocal': false,
-          'source': 'pathOfImage/Video',
+          'questionType': text,
+          'isLocal': true,
+          'source': '3',
           'answer': '',
           'weightage': 0,
-          'learningType': recognition
+          'learningType': readingWrinting
+        },
+        {
+          'disabilityType': dsylexia,
+          'questionType': text,
+          'isLocal': true,
+          'source': '4',
+          'answer': '',
+          'weightage': 0,
+          'learningType': readingWrinting
+        },
+        {
+          'disabilityType': dsylexia,
+          'questionType': text,
+          'isLocal': true,
+          'source': '5',
+          'answer': '',
+          'weightage': 0,
+          'learningType': readingWrinting
         }
       ],
       'Primary': [
@@ -43,6 +61,6 @@ export default class TestDataService {
       ],
       'Secondary': [
       ]
-    }
+    };
   
 }
