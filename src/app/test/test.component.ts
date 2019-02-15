@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 
 import TestDataService from './test-data.service';
-import {audio, html, image, video} from '../app.constatnt';
+import {audio, html, image, text, video} from '../app.constatnt';
 import AppStatic from '../app.static';
 
 /**
@@ -26,6 +26,7 @@ export class TestComponent implements OnInit {
   private _Audio: string = audio;
   private _Html: string = html;
   private _Video: string = video;
+  private _Text: string = text;
 
   constructor(private testDataService: TestDataService) {}
 
