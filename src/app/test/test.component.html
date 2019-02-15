@@ -34,12 +34,24 @@
 
   <mat-grid-tile>
     <mat-card class="card" style="text-align: center;">
-      <span class="question"><strong>{{currentQuestion.question}}</strong></span>
+      <span class="question" *ngIf="!(currentQuestion.questionType === _Html)">
+        <strong>{{currentQuestion.question}}</strong>
+      </span>
 
       <img
         class="question-img"
         *ngIf="currentQuestion.questionType === _Image"
         [src]='currentQuestion.source' />
+
+      <audio controls *ngIf="currentQuestion.questionType === _Audio">
+        <source [src]='currentQuestion.source' type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <div
+        *ngIf="currentQuestion.questionType === _Html"
+        [innerHTML]="currentQuestion.question">
+      </div>
 
     </mat-card>
   </mat-grid-tile>
