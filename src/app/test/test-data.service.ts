@@ -277,7 +277,7 @@ export default class TestDataService {
       } ,
       {
         'disabilityType': dyslexia,
-        'questionType': html,
+        'questionType': video,
         'question': 'See the video and name the fruits that are seen in it.',
         'isLocal': false,
         'source': '<iframe width="560" height="315" src="https://www.youtube.com/embed/6aMex-oF0e0?start=14&amp;end=20" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>',
@@ -324,7 +324,56 @@ export default class TestDataService {
         'answer': '',
         'weightage': 0,
         'learningType': recognition,
-      }],
+      },{
+          'disabilityType': dyslexia,
+          'questionType': text,
+          'question': 'Write your name.',
+          'isLocal': false,
+          'source': '',
+          'answer': '',
+          'weightage': 0,
+          'learningType': writing,
+        },
+        {
+          'disabilityType': dyslexia,
+          'questionType': text,
+          'question': 'Pronounce: Teddy Bear',
+          'isLocal': false,
+          'source': '',
+          'answer': '',
+          'weightage': 0,
+          'learningType': speaking
+        },
+        {
+          'disabilityType': dyscalculia,
+          'questionType': text,
+          'question': '9 is bigger or 7?',
+          'isLocal': false,
+          'source': '',
+          'answer': '',
+          'weightage': 0,
+          'learningType': math
+        },
+        {
+          'disabilityType': dyscalculia,
+          'questionType': text,
+          'question': '= sign is called?',
+          'isLocal': false,
+          'source': '',
+          'answer': '',
+          'weightage': 0,
+          'learningType': math
+        },
+        {
+          'disabilityType': dyscalculia,
+          'questionType': text,
+          'question': '8 - 5 = ?',
+          'isLocal': false,
+          'source': '',
+          'answer': '',
+          'weightage': 0,
+          'learningType': math
+        }],
       'MiddleSchool': [],
       'Secondary': []
     };
