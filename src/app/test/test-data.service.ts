@@ -294,27 +294,8 @@ export default class TestDataService {
         'answer': '',
         'weightage': 0,
         'learningType': recognition,
-      },{
-          'disabilityType': dyslexia,
-          'questionType': text,
-          'question': 'Write your name.',
-          'isLocal': false,
-          'source': '',
-          'answer': '',
-          'weightage': 0,
-          'learningType': writing,
-        },
-        {
-          'disabilityType': dyslexia,
-          'questionType': text,
-          'question': 'Pronounce: Teddy Bear',
-          'isLocal': false,
-          'source': '',
-          'answer': '',
-          'weightage': 0,
-          'learningType': speaking
-        },
-        {
+      },
+      {
           'disabilityType': dyscalculia,
           'questionType': text,
           'question': '9 is bigger or 7?',
@@ -343,7 +324,28 @@ export default class TestDataService {
           'answer': '',
           'weightage': 0,
           'learningType': math
-        }],
+        },
+        {
+          'disabilityType': dyslexia,
+          'questionType': html,
+          'question': 'Write: <br/><b>"I thought bees were attracted to flowers by sight and smell," I said.</b>',
+          'isLocal': false,
+          'source': '',
+          'answer': '',
+          'weightage': 0,
+          'learningType': writing,
+        },
+        {
+          'disabilityType': dyslexia,
+          'questionType': text,
+          'question': 'Pronounce: Pizza',
+          'isLocal': false,
+          'source': '',
+          'answer': '',
+          'weightage': 0,
+          'learningType': speaking
+        }
+      ],
       'MiddleSchool': [],
       'Secondary': []
     };
