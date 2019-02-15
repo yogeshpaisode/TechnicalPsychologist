@@ -19,3 +19,11 @@
 .option-button {
   margin-left: 4px;
 }
+
+.question {
+  display: block;
+}
+
+.question-img {
+  height: 85%;
+}
