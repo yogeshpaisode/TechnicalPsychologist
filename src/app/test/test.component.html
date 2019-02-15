@@ -46,23 +46,22 @@
 
 </mat-grid-list>
 
-<section class="container-margin-left">
-  <mat-card-actions>
 
-    <button mat-flat-button color="accent">Previous</button>
-    <button mat-flat-button
-            color="primary"
-            class="option-button"
-            *ngIf="isNextActive"
-            [disabled]="!currentQuestion.weightage"
-            (click)="onNext();">Next
-    </button>
 
-    <button mat-flat-button
-            color="accent"
-            *ngIf="!isNextActive"
-            (click)="calculateResult()"
-            class="option-button">Done</button>
 
-  </mat-card-actions>
-</section>
+<mat-card>
+  <button mat-flat-button color="accent">Previous</button>
+  <button mat-flat-button
+          color="primary"
+          class="option-button"
+          *ngIf="isNextActive"
+          [disabled]="!currentQuestion.weightage"
+          (click)="onNext();">Next
+  </button>
+
+  <button mat-flat-button
+          color="accent"
+          *ngIf="!isNextActive"
+          (click)="calculateResult()"
+          class="option-button">Done</button>
+</mat-card>
