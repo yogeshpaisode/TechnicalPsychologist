@@ -14,7 +14,7 @@ import AppStatic from '../app.static';
 })
 export class TestComponent implements OnInit {
 
-  private class: string = 'KG';
+  private class: string = 'Primary';
   private testType: string = 'Reading';
   private initialIndex: number = -1;
   private data: any[];

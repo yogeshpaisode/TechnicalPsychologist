@@ -53,6 +53,11 @@
         [innerHTML]="currentQuestion.question">
       </div>
 
+      <video controls autoplay *ngIf="currentQuestion.questionType === _Video" style="height: 90%; width: 90%;">
+        <source [src]='currentQuestion.source' type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+
     </mat-card>
   </mat-grid-tile>
 
