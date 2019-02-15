@@ -1,12 +1,48 @@
+<mat-card>
+  <mat-card-header>
+    <div mat-card-avatar>
+    </div>
+    <mat-card-title>Sonu Mishra</mat-card-title>
+    <mat-card-subtitle>Dislexsia > KG > Reading Test</mat-card-subtitle>
+  </mat-card-header>
+</mat-card>
+
+
 <mat-grid-list cols="2" rowHeight="2:1">
   <mat-grid-tile>
-    <mat-card>
-      Simple card
+    <mat-card class="card">
+
+      <section class="option-group">
+        <mat-radio-group>
+          <mat-radio-button class="options" [value]="25">
+            Bad
+          </mat-radio-button>
+          <mat-radio-button class="options" [value]="50">
+            Moderate
+          </mat-radio-button>
+          <mat-radio-button class="options" [value]="75">
+            Good
+          </mat-radio-button>
+          <mat-radio-button class="options" [value]="100">
+            Excellent
+          </mat-radio-button>
+        </mat-radio-group>
+      </section>
+
     </mat-card>
   </mat-grid-tile>
+
   <mat-grid-tile>
-    <mat-card>
+    <mat-card class="card">
       Simple card
     </mat-card>
   </mat-grid-tile>
+
 </mat-grid-list>
+
+<section class="container-margin-left">
+  <mat-card-actions>
+    <button mat-flat-button color="accent">Previous</button>
+    <button mat-flat-button color="primary" style="margin-left: 4px;">Next</button>
+  </mat-card-actions>
+</section>

@@ -1,0 +1,17 @@
+.card {
+  width: 90%;
+  height: 78%;
+}
+
+.container-margin-left {
+  margin-left: 10px;
+}
+
+.options {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.option-group {
+  margin-top: 33px !important;
+}
