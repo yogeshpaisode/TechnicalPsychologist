@@ -1,1 +1,10 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body {
+  background-image: url("./assets/images/school.jpeg");
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
