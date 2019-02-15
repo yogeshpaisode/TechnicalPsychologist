@@ -33,8 +33,14 @@
   </mat-grid-tile>
 
   <mat-grid-tile>
-    <mat-card class="card">
-      {{currentQuestion.question}}
+    <mat-card class="card" style="text-align: center;">
+      <span class="question"><strong>{{currentQuestion.question}}</strong></span>
+
+      <img
+        class="question-img"
+        *ngIf="currentQuestion.questionType === _Image"
+        [src]='currentQuestion.source' />
+
     </mat-card>
   </mat-grid-tile>
 

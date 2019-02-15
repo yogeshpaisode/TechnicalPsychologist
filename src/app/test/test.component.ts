@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 
 import TestDataService from './test-data.service';
+import {image} from '../app.constatnt';
 
 /**
  * @title Stepper overview
@@ -19,6 +20,8 @@ export class TestComponent implements OnInit {
   private result: any[];
   private currentQuestion: any;
   private isNextActive: boolean = true;
+
+  private _Image: string = image;
 
   constructor(private testDataService: TestDataService) {}
 
