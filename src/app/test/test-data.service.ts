@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {audio, dsylexia, image, readingWrinting, text} from '../app.constatnt';
+import {audio, dsylexia, image, listening, readingWrinting, recognition, text} from '../app.constatnt';
 
 @Injectable()
 export default class TestDataService {
@@ -23,7 +23,7 @@ export default class TestDataService {
           'source': 'pathOfAudio',
           'answer': '',
           'weightage': 0,
-          'learningType': 'Listening'
+          'learningType': listening
         },
         {
           'disabilityType': dsylexia,
@@ -32,7 +32,7 @@ export default class TestDataService {
           'source': 'pathOfImage/Video',
           'answer': '',
           'weightage': 0,
-          'learningType': 'Recognition'
+          'learningType': recognition
         }
       ],
       'Primary': [
