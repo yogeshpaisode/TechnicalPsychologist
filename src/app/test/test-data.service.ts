@@ -6,10 +6,10 @@ export default class TestDataService {
 
   public result: any = [
     {
-      type: dsylexia,
+      type: dyslexia,
       categories: [
         {
-          type: readingWrinting,
+          type: reading,
           score: 0
         }
       ]
