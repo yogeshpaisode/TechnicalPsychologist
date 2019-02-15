@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {audio, dyslexia, image, listening, reading, writing, recognition, text, speaking, dyscalculia} from '../app.constatnt';
+import {audio, dyslexia, image, listening, reading, writing, recognition, text, speaking, dyscalculia, math} from '../app.constatnt';
 
 @Injectable()
 export default class TestDataService {
@@ -9,7 +9,28 @@ export default class TestDataService {
       type: dyslexia,
       categories: [
         {
-          type: reading,
+          type: writing,
+          score: 0
+        },
+        {
+          type: recognition,
+          score: 0
+        },
+        {
+          type: speaking,
+          score: 0
+        },
+        {
+          type: writing,
+          score: 0
+        }
+      ]
+    },
+    {
+      type: dyscalculia,
+      categories: [
+        {
+          type: math,
           score: 0
         }
       ]
@@ -117,7 +138,7 @@ export default class TestDataService {
           'source': '',
           'answer': '',
           'weightage': 0,
-          'learningType': speaking
+          'learningType': math
         },
         {
           'disabilityType': dyscalculia,
@@ -126,7 +147,8 @@ export default class TestDataService {
           'isLocal': false,
           'source': '',
           'answer': '',
-          'weightage': 0
+          'weightage': 0,
+          'learningType': math
         },
         {
           'disabilityType': dyscalculia,
@@ -135,7 +157,8 @@ export default class TestDataService {
           'isLocal': false,
           'source': '',
           'answer': '',
-          'weightage': 0
+          'weightage': 0,
+          'learningType': math
         },
         {
           'disabilityType': dyscalculia,
@@ -144,7 +167,8 @@ export default class TestDataService {
           'isLocal': false,
           'source': '',
           'answer': '',
-          'weightage': 0
+          'weightage': 0,
+          'learningType': math
         },
         {
           'disabilityType': dyscalculia,
@@ -153,7 +177,8 @@ export default class TestDataService {
           'isLocal': false,
           'source': '',
           'answer': '',
-          'weightage': 0
+          'weightage': 0,
+          'learningType': math
         },
         {
           'disabilityType': dyscalculia,
@@ -163,7 +188,7 @@ export default class TestDataService {
           'source': '',
           'answer': '',
           'weightage': 0,
-          'learningType': speaking
+          'learningType': math
         }
       ],
       'Primary': [],
