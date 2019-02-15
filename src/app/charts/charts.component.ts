@@ -20,6 +20,11 @@ export class ChartsComponent implements OnInit {
   constructor(private chartsConfigService: ChartsConfigService) { }
 
   ngOnInit() {
+    this.setChartOptions();
+  }
+
+  private setChartOptions(): void {
+    this.chartOptions = this.chartsConfigService.getChartConfig();
   }
 
   private onChartInstance(): void {
