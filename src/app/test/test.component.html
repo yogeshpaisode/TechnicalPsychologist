@@ -55,6 +55,7 @@
     <button mat-flat-button
             color="accent"
             *ngIf="!isNextActive"
+            (click)="calculateResult()"
             class="option-button">Done</button>
 
   </mat-card-actions>

@@ -16,6 +16,7 @@ export class TestComponent implements OnInit {
   private testType: string = 'Reading';
   private initialIndex: number = -1;
   private data: any[];
+  private result: any[];
   private currentQuestion: any;
   private isNextActive: boolean = true;
 
@@ -23,6 +24,7 @@ export class TestComponent implements OnInit {
 
   ngOnInit(): void {
     this.data = JSON.parse(JSON.stringify(this.testDataService.testData.kg));
+    this.result = JSON.parse(JSON.stringify(this.testDataService.result));
     this.onNext();
   }
 
@@ -32,5 +34,26 @@ export class TestComponent implements OnInit {
     if (this.isNextActive) {
       this.currentQuestion = this.data[this.initialIndex];
     }
+  }
+
+  private calculateResult(): void {
+    let problemType: string;
+    let score: number = 0;
+    let counter: number = 0;
+    this.result.forEach((result: any) => {
+      problemType = result.type;
+      result['categories'].forEach((category: string) => {
+            this.data.forEach((question: any) => {
+              if ((problemType === question.disabilityType) && (question.learningType === category['type'])) {
+                counter ++;
+                score += question.weightage;
+              }
+            });
+        category['score'] = (score / counter);
+        score = 0;
+        counter = 0;
+      });
+      problemType = '';
+    });
   }
 }

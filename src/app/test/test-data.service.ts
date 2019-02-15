@@ -4,6 +4,19 @@ import {audio, dsylexia, image, listening, readingWrinting, recognition, text} f
 @Injectable()
 export default class TestDataService {
 
+  public result: any = [
+    {
+      type: dsylexia,
+      categories: [
+        {
+          type: readingWrinting,
+          score: 0
+        }
+      ]
+    }
+  ];
+
+
   public testData: any =
     {
       'kg': [
@@ -53,14 +66,9 @@ export default class TestDataService {
           'learningType': readingWrinting
         }
       ],
-      'Primary': [
-
-      ],
-      'MiddleSchool': [
-
-      ],
-      'Secondary': [
-      ]
+      'Primary': [],
+      'MiddleSchool': [],
+      'Secondary': []
     };
-  
+
 }
