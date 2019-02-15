@@ -34,7 +34,9 @@
 
   <mat-grid-tile>
     <mat-card class="card" style="text-align: center;">
-      <span class="question" *ngIf="!(currentQuestion.questionType === _Html)">
+      <span class="question" *ngIf="!(currentQuestion.questionType === _Html)"
+
+      [ngClass]="(currentQuestion.questionType === _Text) ? 'text': ''">
         <strong>{{currentQuestion.question}}</strong>
       </span>
 
