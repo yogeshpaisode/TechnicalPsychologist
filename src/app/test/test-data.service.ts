@@ -21,7 +21,7 @@ export default class TestDataService {
           score: 0
         },
         {
-          type: writing,
+          type: listening,
           score: 0
         }
       ]
@@ -60,7 +60,7 @@ export default class TestDataService {
           'answer': '',
           'weightage': 0,
           'learningType': recognition
-        }/*,
+        },
         {
           'disabilityType': dyslexia,
           'questionType': text,
@@ -189,7 +189,7 @@ export default class TestDataService {
           'answer': '',
           'weightage': 0,
           'learningType': math
-        }*/
+        }
       ],
       'Primary': [{
         'disabilityType': dyslexia,

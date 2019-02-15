@@ -6,13 +6,14 @@ export default class ChartsConfigService {
   public getChartConfig(title: string, score: number): any {
     return {
       chart: {
-        plotBackgroundColor: null,
-        plotBorderWidth: null,
-        plotShadow: false,
+        plotShadow: true,
         type: 'pie'
       },
       title: {
-        text: title
+        text: title.toUpperCase()
+      },
+      credits: {
+        enabled: false
       },
       tooltip: {
         pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'

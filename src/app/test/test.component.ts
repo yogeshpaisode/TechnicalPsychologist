@@ -27,7 +27,7 @@ export class TestComponent implements OnInit {
   constructor(private testDataService: TestDataService) {}
 
   ngOnInit(): void {
-    this.data = JSON.parse(JSON.stringify(this.testDataService.testData.kg));
+    this.data = JSON.parse(JSON.stringify(this.testDataService.testData.Primary));
     this.result = JSON.parse(JSON.stringify(this.testDataService.result));
     this.onNext();
   }
